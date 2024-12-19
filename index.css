@@ -1,0 +1,44 @@
+.qAppArea{
+    
+}
+
+.Qbtn{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 400px;
+    font-size: 18px;
+    height: 45px;
+    background-color: rgba(0, 0, 255, 0.4);
+    color: white;
+}
+
+#quizText{
+    text-align: center;
+    height: 50px;
+}
+
+.selectBtn{
+    display: flex;
+    flex-direction: column; /* 子要素を縦方向に配置 */
+    align-items: center; /* 子要素を中央揃え */
+    
+}
+
+#skipbtn{
+    padding: 3px;
+    align-self: flex-end; 
+}
+
+@media only screen and (max-width: 375px) {
+    /* iPhone SE 2 の幅は375pxです */
+    /* ここにモバイルデバイスに対するスタイルを追加 */
+
+    .Qbtn{
+        width: 300px;
+    }
+
+    #skipbtn{
+        margin-left: 30px;
+    }
+}

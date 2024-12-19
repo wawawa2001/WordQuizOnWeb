@@ -1,0 +1,39 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>SelectWordQuiz</title>
+</head>
+<body>
+    <input type="file" accept=".csv" id="csvFileInput" onchange="loadCSV(event)">
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="incorrectSound" src="incorrect.mp3"></audio>
+
+    <div>
+        <div class="Option">
+            <h3 style="margin-bottom: 5px;display: inline-block;">Range: </h3>
+            <div class="Quizrange" style="display: inline-block;">
+                <input type="text" id="sNum" style="font-size: 20px;width: 60px;">
+                <span style="font-size: 30px;"> ~ </span>
+                <input type="text" id="eNum" style="font-size: 20px;width: 60px;">
+                <button onclick="setFilter()" style="font-size: 20px;height: 40px;">　Set　</button>
+                <button id="changebtn" onclick="changebtn()" style="font-size: 20px;height: 40px;">　EN切替　</button>
+            </div>
+        </div><br>
+
+        <div class="qAppArea">
+
+            <h1 id="quizText"></h1>
+
+            <div class="selectBtn">
+                <button class="Qbtn" id="a1" onclick="buttonClick(0)"></button><br>
+                <button class="Qbtn" id="a2" onclick="buttonClick(1)"></button><br>
+                <button class="Qbtn" id="a3" onclick="buttonClick(2)"></button><br>
+                <button id="skipbtn" onclick="skipbtnClick()" style="font-size: 20px;border-radius: 20px;">　Skip　</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
