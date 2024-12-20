@@ -12,7 +12,7 @@
 - **CSVダウンロード**: 間違えた単語をCSV形式でダウンロードできます。
 
 ## イメージ
-<img src="https://github.com/user-attachments/assets/8e6ca096-962a-4460-8e20-97f3c7df9f73" width="300">
+<img src="https://github.com/user-attachments/assets/8e6ca096-962a-4460-8e20-97f3c7df9f73" width="700">
 
 ## 必要条件
 
